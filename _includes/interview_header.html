@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        .header2 {
+            font-family: 'Montserrat',sans-serif;
+            z-index: 1;
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: 0 auto;
+            -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            max-width: 75%;
+        }
+
+        .header2 h1 {
+            text-align: center;
+            font-size: 76px;
+            color: #fff;
+            margin: 0;
+        }
+
+        .header2 .site-description {
+            font-size: 34px;
+            display: block;
+            line-height: 1;
+            color: #fff;
+            margin-top: 10px;
+        }
+ 
+        /* Default styles for mobile view */
+        .nav-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav-item {
+            margin: 5px 0;
+        }
+
+        /* Styles for desktop view */
+        @media (min-width: 768px) {
+            .nav-header {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .nav-item {
+                margin: 0 10px;
+                text-decoration: none;
+            }
+        }
+        * {
+          box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNNBPG24"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="particles-js">
+        <div class="header2"> 
+            <div class="header-icons nav-header">
+                <a class="nav-item" aria-label="Home" href="/" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">Home</a>
+                <a class="nav-item" aria-label="Learning" href="/learning.html" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">Learning</a>
+                <!-- <a aria-label="Blog" href="/blog.html" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">Blog</a> -->
+                <a class="nav-item" aria-label="References" href="/references.html" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">References</a>
+                <a class="nav-item" aria-label="Resume" href="/resume.html" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">Resume</a>
+            </div>
+            <h1>
+                <span class="site-title">Running Interview</span>
+                <span class="site-description">Par Pacific</span>
+                <span class="site-description">1st Interview @ 1:00PM CST 01/23/2024,</span>
+                <span class="site-description">2nd Interview @ 1:30PM CST 01/31/2024</span>
+            </h1>
+        </div>
+        <a class="down" href="#interview" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+    </div>
+</body>
+</html>

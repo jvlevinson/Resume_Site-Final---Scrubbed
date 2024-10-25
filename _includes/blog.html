@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tech Blog</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    {% include blog_header.html %} <!-- Header Section -->
+
+    <!-- Search Bar -->
+    <section class="search-container2">
+        <form class="search-bar_journalcontain" id="sb_journal-container" action="/search" method="GET">
+            <div class="input-group">
+                <button id="search-button_journal" type="submit" class="search-button_journal">
+                    <i class="fa fa-search"></i>
+                </button>
+                <input type="text" id="query" name="query" class="input-group_input" required />
+                <label for="query" class="input-group_label">Search Tech Journals...</label>
+            </div>
+        </form>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section class="blog-posts">
+        <hr class="hr-line">
+        <article class="post">
+            <div class="date-container">
+                <div class="month">October</div>
+                <div class="day">21<sup>st</sup></div>
+            </div>
+            <div class="post-content">
+                <h2 class="post-title"><a href="/blogs/2023/11_november_blogs/11222023_OpenAI_CEO-Employment.html">Unleashing the Power of Velocloud SD-WAN</a></h2>
+                <p class="post-description">A Gateway to Revolutionary Networking</p>
+                <a href="/blogs/2023/11_november_blogs/11222023_OpenAI_CEO-Employment.html" class="read-more">Read More</a>
+            </div>
+        </article>
+
+        <article class="post">
+            <div class="date-container">
+                <div class="month">July</div>
+                <div class="day">8<sup>th</sup></div>
+            </div>
+            <div class="post-content">
+                <h2 class="post-title"><a href="/blog/2023/javosec-revolution-07082023.html">Revolutionizing the IT Landscape with Javosec</a></h2>
+                <p class="post-description">The Birth of Excellence.</p>
+                <a href="/blog/2023/javosec-revolution-07082023.html" class="read-more">Read More</a>
+            </div>
+        </article>
+    </section>
+
+    {% include footer.html %} <!-- Footer Section -->
+
+    <!-- Chatbot Container -->
+    <div id="chatbot-container"></div>
+
+    <!-- Scripts -->
+    <script src="{{ '/assets/js/particles.min.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/assets/js/sweet-scroll.min.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/assets/js/chatbot.js' | prepend: site.baseurl }}"></script> <!-- Chatbot Script -->
+
+</body>
+</html>

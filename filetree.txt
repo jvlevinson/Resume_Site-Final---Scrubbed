@@ -1,0 +1,215 @@
+/mnt/c/Users/JordanLevinson/OneDrive - Javosec Corp/Documents/Github/Resume_Site-Final
+├── AWS Amplify Errors.txt
+├── Gemfile
+├── Gemfile.lock
+├── Gemfile.lock.bu
+├── LICENSE
+├── README.md
+├── _config.yml
+├── _includes
+│   ├── about.html
+│   ├── blog.html
+│   ├── blog_header.html
+│   ├── customers.html
+│   ├── footer.html
+│   ├── head.html
+│   ├── head_secondary.html
+│   ├── header.html
+│   ├── interview.html
+│   ├── interview_header.html
+│   ├── learn_header.html
+│   ├── learning.html
+│   ├── lor.html
+│   ├── references.html
+│   ├── references_header.html
+│   ├── resume.html
+│   ├── resume_header.html
+│   ├── schedule-interview.html
+│   └── schedule_header.html
+├── _layouts
+│   ├── blog.html
+│   ├── default.html
+│   ├── learning.html
+│   ├── references.html
+│   ├── resume.html
+│   ├── running-interview.html
+│   └── schedule-interview.html
+├── assets
+│   ├── css
+│   │   ├── devicon.min.css
+│   │   ├── main.css
+│   │   └── main_experimental.css
+│   ├── favicon.png
+│   ├── favicons.png
+│   ├── fonts
+│   │   ├── devicon.ttf
+│   │   ├── devicon.woff
+│   │   ├── fontawesome-webfont.ttf
+│   │   ├── fontawesome-webfont.woff
+│   │   └── fontawesome-webfont.woff2
+│   ├── images
+│   │   ├── Atomic Habits By James Clear.jpg
+│   │   ├── Bing Ai Logo Vector.svg
+│   │   ├── DSC_5644-XL.jpg
+│   │   ├── EGO is the Enemy By Ryan Holiday.jpg
+│   │   ├── Excel Logo.svg
+│   │   ├── Figma-logo.svg
+│   │   ├── Great CEOs are Lazy By Jim Schleckser.jpg
+│   │   ├── HarvardX_Logo.jpg
+│   │   ├── Hewlett_Packard_Enterprise_Centered squared logo.svg
+│   │   ├── Hewlett_Packard_Enterprise_logo.svg
+│   │   ├── IMG_1686_Square Reduced.jpg
+│   │   ├── IMG_1686_Square.jpg
+│   │   ├── IMG_1686_cleanup.jpeg
+│   │   ├── IMG_5804.PNG
+│   │   ├── Juniper Networks GreenSquare.svg
+│   │   ├── Juniper_Networks_cmyk_black.svg
+│   │   ├── Logitech
+│   │   │   └── 2024
+│   │   │       ├── Logitech - BYOD Specialist - O - 2024.png
+│   │   │       ├── Logitech - Headset Specialist - D - 2024.png
+│   │   │       ├── Logitech - Logi Dock Specialist - D - 2024.png
+│   │   │       ├── Logitech - Rally Specialist - O - 2024.png
+│   │   │       ├── Logitech - Room Solution Specialist - O - 2024.png
+│   │   │       ├── Logitech - Scribe Specialist - O - 2024.png
+│   │   │       ├── Logitech - Swytch Specialist - O - 2024.png
+│   │   │       ├── Logitech - Sync Specialist - H - 2024.png
+│   │   │       ├── Logitech - Tap Specialist - O - 2024.png
+│   │   │       ├── Logitech - Video Collab Specialist - 2024.png
+│   │   │       └── Logitech - Webcam Specialist - D - 2024.png
+│   │   ├── Microsoft_Visio-Logo.wine.png
+│   │   ├── Microsoft_Visio-Logo.wine.svg
+│   │   ├── Never Split the Difference By Chris Voss.jpg
+│   │   ├── Pluralsight-us-hover-v1.0.svg
+│   │   ├── Pluralsight-us-v1.0.svg
+│   │   ├── Rapid7-01.svg
+│   │   ├── SentinelOne
+│   │   │   └── 2024
+│   │   │       ├── Pre-Sales Professional - Sales Engineer Professional.png
+│   │   │       └── Sales Professional - Sales Professional.png
+│   │   ├── Sward.jfif
+│   │   ├── The Four Agreements By Don Miguel Ruiz.jpg
+│   │   ├── connectwise-seeklogo.com.svg
+│   │   ├── cradlepoint.svg
+│   │   ├── credly-hover.svg
+│   │   ├── credly-svgrepo-com.svg
+│   │   ├── dblack.jfif
+│   │   ├── dblack.png
+│   │   ├── dduby.jfif
+│   │   ├── dduby.png
+│   │   ├── fcantu.jfif
+│   │   ├── fcantu.png
+│   │   ├── fortinet-thumbnail.png
+│   │   ├── illustrations-spot-hero-Data Center.svg
+│   │   ├── jvlevinson-001.png
+│   │   ├── lstille.jfif
+│   │   ├── lstille.png
+│   │   ├── sward.png
+│   │   ├── vSphere.svg
+│   │   └── zscaler-logo.svg
+│   ├── js
+│   │   ├── main.js
+│   │   ├── particles.min.js
+│   │   └── sweet-scroll.min.js
+│   └── pdfs
+│       ├── Certifications
+│       │   ├── Cisco
+│       │   │   └── 700-150 - Introduction to Cisco Sales.pdf
+│       │   ├── Dell
+│       │   │   ├── HOL-2140-01-NET - VMware SD-WAN by Velocloud - Getting Started 4-7-21.pdf
+│       │   │   ├── VMware SD-WAN by VeloCloud OEM - Support and Deployment - Recorded Vendor-Led Training.pdf
+│       │   │   ├── VTSP SD-WAN 2019 - Introduction to VMware SD-WAN 4-7-21.pdf
+│       │   │   ├── VTSP SD-WAN 2019 - VMware Technical Solutions Professional 4-7-21.pdf
+│       │   │   └── VxRail Security Technical Implementation Guide (STIG) Compliance.pdf
+│       │   ├── Fortinet
+│       │   │   ├── Certs
+│       │   │   │   ├── Course_Completion_Certificate.pdf
+│       │   │   │   ├── Fortinet - FCA Cybersecurity - 11052023.pdf
+│       │   │   │   ├── Fortinet - FCF Cybersecurity - 11062023.pdf
+│       │   │   │   ├── Fortinet - Fast Track - [Fabric Management] Reduce the Complexity of Operations Course Completion Certificate.pdf
+│       │   │   │   ├── Fortinet - NSE1 - Network Security Associate.pdf
+│       │   │   │   ├── Fortinet - NSE2 - Network Security Associate.pdf
+│       │   │   │   ├── Fortinet - NSE3 - Network Security Associate.pdf
+│       │   │   │   └── NSE3 - FortiDeceptor 12302020.pdf
+│       │   │   └── Partner CE
+│       │   │       ├── Fortinet - Fast Track - Fabric Mgmt - Reduce Complex Operations - 11212023.pdf
+│       │   │       ├── Fortinet - Fast Track - Security Driven Networking - Constructing a Secure SDWAN Arch. - 12122023.pdf
+│       │   │       ├── Fortinet - Fast Track - Security Driven Networking - Fortifying the Enterprise Network - 12052023.pdf
+│       │   │       ├── Fortinet - Fast Track - Security Driven Networking - Intro to Fortinet Security - 11282023.pdf
+│       │   │       └── Fortinet - SDWAN Sales Training - 12092023.pdf
+│       │   ├── ISC_Letter.pdf
+│       │   ├── Meraki
+│       │   │   └── Partner CE
+│       │   │       └── Meraki - CMNA Certificate.pdf
+│       │   ├── SentinelOne
+│       │   │   └── Partner CE
+│       │   │       ├── Partners - SentinelOne Pre-Sales-Tech Accreditation Applied - 08262024.pdf
+│       │   │       ├── Partners - SentinelOne Pre-Sales-Tech Accreditation Fundamentals - 08252024.pdf
+│       │   │       ├── Partners - SentinelOne Sales Accreditation Applied - 08232024.pdf
+│       │   │       ├── Partners - SentinelOne Sales Fundamentals - 08232024.pdf
+│       │   │       ├── Partners - Singularity Identity - Foundations - 08232024.pdf
+│       │   │       └── Partners - Singularity Identity - Sales Fundamentals - 08232024.pdf
+│       │   ├── VMware
+│       │   │   ├── VMware vSAN Plan and Deploy v7.0 Cert.pdf
+│       │   │   ├── VSP-SDWAN 2021.pdf
+│       │   │   ├── VSP-TZ VMWare Tanzu Standard 2021.pdf
+│       │   │   ├── VTSP-CB Carbon Black Endpoint Protection 2020.pdf
+│       │   │   ├── VTSP-DAV Desktop and App Virtualization 2021.pdf
+│       │   │   ├── VTSP-SASE 2021.pdf
+│       │   │   └── VTSP-TZ VMWare Tanzu Standard 2021.pdf
+│       │   └── Zscaler
+│       │       ├── ZCCA-IA Internet Access 10-10-19.pdf
+│       │       ├── ZCCA-PA Private Access 10-18-19.pdf
+│       │       └── ZCTS Cloud Transformation Specialist 09-16-19.pdf
+│       ├── Interviews
+│       │   └── 01232024
+│       │       └── Par Pacific
+│       │           └── Par Pacific - Sr. Network Engineer Cover Letter - Rev. 1.1 - 01172024.pdf
+│       ├── Jlevinson - Resume.pdf
+│       ├── Letter of Recommendation - David Black.pdf
+│       ├── Letter of Recommendation - Rene Alvarez.pdf
+│       ├── Letter of Recommendation - Sean Ward.pdf
+│       └── Place Holder.pdf
+├── blog.html
+├── blogs
+│   └── 2023
+│       └── 11_november_blogs
+│           └── 11222023_OpenAI_CEO-Employment.html
+├── blogs.html
+├── filetree.txt
+├── gulpfile.js
+├── index.html
+├── learning.html
+├── package-lock.json
+├── package.json
+├── par-pacific.html
+├── references.html
+├── resume.html
+├── robots.txt
+├── schedule-interview.html
+├── screenshot.png
+├── sitemap.xml
+└── src
+    ├── fonts
+    │   ├── devicon.ttf
+    │   ├── devicon.woff
+    │   ├── fontawesome-webfont.ttf
+    │   ├── fontawesome-webfont.woff
+    │   └── fontawesome-webfont.woff2
+    ├── js
+    │   └── app.js
+    └── styles
+        ├── _about.scss
+        ├── _animation.scss
+        ├── _base.scss
+        ├── _certifications.scss
+        ├── _footer.scss
+        ├── _header.scss
+        ├── _references.scss
+        ├── _vars.scss
+        ├── lib
+        │   ├── _devicon.scss
+        │   ├── _fontawesome.scss
+        │   └── _normalize.scss
+        └── main.scss
+

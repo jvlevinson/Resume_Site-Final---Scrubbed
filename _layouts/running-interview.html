@@ -1,0 +1,25 @@
+---
+layout: running-interview
+---
+<!DOCTYPE html>
+<link rel="shortcut icon" type="image/png" href="{{ '/assets/favicon.png' }}" >
+<html lang="en"></html>
+</div>
+{% include head.html %}
+<body>
+	{% include interview_header.html %}
+	<section id="interview">
+	  {% include interview.html %}
+	</section>
+	  {{ content }}
+	{% include footer.html %}
+  
+  <!-- Include the particles.js library -->
+  <script src="{{ '/assets/js/particles.min.js' | prepend: site.baseurl }}"></script>
+  
+  <!-- Include the main.js script that initializes particles for both hero and footer -->
+  <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
+
+  <!-- Include the sweet-scroll.min.js library -->
+  <script src="{{ '/assets/js/sweet-scroll.min.js' | prepend: site.baseurl }}"></script>
+</body>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="800"
+   height="800"
+   viewBox="0 0 211.66666 211.66667"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="Pluralsight-us-hover-v1.0.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#cacaca"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.25921545"
+     inkscape:cx="71.369204"
+     inkscape:cy="1217.1343"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1"
+     showguides="true">
+    <sodipodi:guide
+       position="114.31932,106.53372"
+       orientation="0,-1"
+       id="guide1"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="114.31932,106.53372"
+       orientation="1,0"
+       id="guide2"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1"
+       transform="matrix(11.089532,0,0,11.089532,-601.43142,-1425.9752)"
+       style="fill:#ffffff">
+      <path
+         id="path1"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.513699;stroke-opacity:1"
+         d="M 105.83333 3.9500001e-06 A 105.83334 105.83333 0 0 0 4.5547597e-07 105.83334 A 105.83334 105.83333 0 0 0 105.83333 211.66667 A 105.83334 105.83333 0 0 0 211.66667 105.83334 A 105.83334 105.83333 0 0 0 105.83333 3.9500001e-06 z M 87.348675 62.937765 L 160.83101 105.8261 L 87.348675 148.71444 L 87.348675 128.74408 L 69.434523 139.11296 L 69.434523 72.539763 L 87.348675 82.908639 L 87.348675 62.937765 z M 95.025726 76.312143 L 95.025726 87.352296 L 126.94161 105.8261 L 95.025726 124.29991 L 95.025726 135.3411 L 145.5937 105.8261 L 95.025726 76.312143 z M 77.11209 85.857813 L 77.11209 125.79543 L 87.348675 119.87021 L 87.348675 91.782516 L 77.11209 85.857813 z M 95.025726 96.226173 L 95.025726 115.42603 L 111.61076 105.8261 L 95.025726 96.226173 z "
+         transform="matrix(0.09017513,0,0,0.09017513,54.234157,128.5875)" />
+    </g>
+  </g>
+</svg>

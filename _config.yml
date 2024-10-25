@@ -1,0 +1,49 @@
+# Site settings
+title: Jordan V. Levinson - Professional Network Architect
+description: Jordan V Levinson's Personal Resume / Portfolio - Containing his impressive career history!
+baseurl: "" # the subpath of your site, e.g., /blog
+# url: "jvlevinson.local:4000" # the base hostname & protocol for your site, e.g., https://firstlastname.com
+
+# User settings
+username: Jordan V. Levinson
+user_description: Welcome, I'm Jordan Levinson, a seasoned network engineer and architect with a unique business-first perspective. With nearly a decade of experience in Enterprise Environments, I understand not only the technical intricacies but also the financial and administrative complexities of running a business. My expertise spans Hybrid Cloud Architecture, Automation, Network Design, Virtualization, Cloud Security, Cryptography, Voice service, project management, and much more. Fluent in both English and Spanish, I excel in understanding customer needs and crafting tailored solutions.
+user_description1: My approach to every challenge is rooted in three core principles, <strong>"Think, Plan, Execute".</strong> I believe in first understanding the broader business context <strong>"Think"</strong>, then meticulously planning solutions that align with a company's financial and operational goals <strong>"Plan"</strong>, and finally implementing these strategies efficiently and effectively <strong>"Execute"</strong>. This holistic approach ensures that the solutions I design not only meet technical requirements but also drive business growth and success. As I continue my newly found AI-focused career path, I'm eager to leverage my skills to solve real-world challenges and make a significant impact in the enterprise sector.
+user_description2: "A jack of all trades is a master of none, but oftentimes better than a master of one"
+user_title: Senior Engineer / Architect
+email: jvlevinson@outlook.com
+linkedin_username: jvlevinson
+github_username: jvlevinson
+# twitter_username: lorem_ipsum
+# instagram_username: lorem_ipsum
+# facebook_username: lorem_ipsum
+# medium_username: lorem_ipsum
+# medium_url: lorem_ipsum.medium.com
+# gplus_username: lorem_ipsum
+section_about: About
+section_learning: Learning
+section_certs: Certifications
+section_resume: Resume
+
+exclude: 
+  - package.json
+  - package-lock.json
+  - node_modules
+  - vendor
+  - amplify
+
+nav_links:
+  - name: "Home"
+    url: "/index/"  # Link to the Home page
+  - name: "Blog"
+    url: "/blog/"  # Link to the Blog page
+  - name: "Learning"
+    url: "/learning/"  # Link to the Learning page
+  - name: "References"
+    url: "/references/"  # Link to the References page
+  - name: "Resume"
+    url: "/resume/"  # Link to the Resume page
+  - name: "Schedule Interview"
+    url: "/schedule-interview/"  # Link to the Schedule Interview page
+
+# Ensure these paths are correct and match your site's structure. 
+# Adjust the file paths in your links to ensure that navigation works properly.

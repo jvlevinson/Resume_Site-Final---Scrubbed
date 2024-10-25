@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab|Antic+Slab');
+
+/* ========================================== GENERAL ==========================================*/
+
+/* Reset and Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-size: 100%;
+    line-height: 1.5;
+    color: #555;
+    font-family: 'Antic Slab', serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header Styles */
+.header {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    z-index: 1;
+}
+
+.header .site-title {
+    font-size: 76px;
+    display: block;
+    line-height: 1;
+}
+
+.header .site-description {
+    font-size: 34px;
+    margin-top: 10px;
+}
+
+.header-links .link, .header-icons .icon {
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.header-icons .icon {
+    padding: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    border: 2px solid #fff;
+}
+
+.header-icons .icon:hover {
+    color: #1a222c;
+    background: #fff;
+}
+
+.down .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    fill: #fff;
+    animation: pulse 1.3s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.4;
+        top: 0;
+    }
+    50% {
+        opacity: 1;
+        top: -10px;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    background: transparent;
+    color: #fff;
+    z-index: 1;
+}
+
+#footer-particles-js {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.footer p {
+    margin: 0;
+    line-height: 150px;
+    font-size: 16px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Particles Background */
+#particles-js {
+    background: #1a222c;
+    display: flex;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Navigation Styles */
+.nav-links a {
+    font-size: 30px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* About Section */
+.image-cropper {
+    width: 300px; /* Adjust as needed */
+    height: 300px; /* Should be equal to width for a perfect circle */
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block; /* Aligns the container if needed */
+    margin-top: 20px; /* Margin added above the container */
+}
+
+.image-cropper img {
+    width: 100%; /* Ensures the image covers the whole container */
+    height: auto; /* Maintains aspect ratio */
+    vertical-align: middle;
+}
+
+/* Heading Styles */
+h1 {
+    margin-top: 0px;
+    padding-top: 10px;
+}
+
+/* Paragraph Styles */
+p {
+    text-indent: 30px;
+}
+
+/* Tech Image Styles */
+.tech img {
+    object-fit: contain;
+    height: 60px;
+    width: auto;
+}
+
+/* Testimonial Quote Styles */
+.testimonial-quote {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.testimonial-quote blockquote {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: none;
+    color: #555;
+    font-family: Georgia, serif;
+    font-size: 1.5em;
+    font-style: italic;
+    line-height: 1.4 !important;
+    position: relative;
+    text-shadow: 0 1px white;
+    z-index: 600;
+}
+
+.testimonial-quote blockquote p:first-child:before,
+.testimonial-quote blockquote p:after {
+    content: '\201C'; /* Opening and closing quotes */
+    color: #81bedb;
+    font-size: 7.5em;
+    font-weight: 700;
+    opacity: .3;
+    position: absolute;
+    top: -.4em;
+    left: -.2em; 
+    text-shadow: none;
+    z-index: -300;
+}
+
+.testimonial-quote img {
+    border: 3px solid #9CC1D3;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.testimonial-quote cite {
+    color: #555;
+    display: block;
+    font-size: .8em;
+    text-align: center;
+}
+
+.testimonial-quote cite span {
+    color: #555;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0 1px white; 
+}
+
+/* Book Section */
+.book-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.book {
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 180px;
+}
+
+.book img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.book-title {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.read-counter {
+    margin-top: 5px;
+    font-size: 1em;
+    color: #666;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .user {
+        flex-direction: column;
+    }
+
+    .tech {
+        width: 100%;
+    }
+
+    .testimonial-quote blockquote {
+        font-size: 1.2em;
+    }
+
+    .testimonial-quote {
+        width: 90%;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .book-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book {
+        width: 80%;
+    }
+}

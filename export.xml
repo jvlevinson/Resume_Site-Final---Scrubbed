@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  {% for post in site.posts %}
+    <entry>
+      <title type="html">{{ post.title | xml_escape }}</title>
+      <link href="{{ site.url }}{{ post.url }}" />
+      <slug>{{ post.slug }}</slug>
+      <posted>{{ post.date | date: "%Y-%m-%d %H:%M:%S" | date_to_xmlschema }}</posted>
+      <id>{{ site.url }}{{ post.id }}</id>
+      <summary type="html">{{ post.content | strip_html | truncatewords: 50 | xml_escape }}</summary>
+      <content type="html">{{ post.content | xml_escape }}</content>
+      <author><name>{{ post.author | default: "Admin" }}</name></author>
+      <category>{{ post.categories | join: "," }}</category>
+      <tags>{{ post.tags | join: "," }}</tags>
+    </entry>
+  {% endfor %}
+</feed>

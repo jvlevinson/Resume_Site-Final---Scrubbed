@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Certifications & Official Training</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            font-family: 'Montserrat', sans-serif;
+            z-index: 1;
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        header h1, header h3 {
+            text-align: center;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .certs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .certs_column1, .certs_column2 {
+            flex: 1;
+            margin: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            width: 75%;
+            margin: auto;
+        }
+
+        h4 {
+            text-align: center;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        li {
+            margin: 10px 0 10px 115px;
+        }
+
+        a {
+            color: #555;
+            text-decoration: none;
+            display: block;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #333;
+        }
+
+        .CE {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .two-columns {
+            display: flex;
+            gap: 20px;
+        }
+
+        .two-columns ul {
+            flex: 1; /* Makes each column equal width */
+        }
+
+        .s1-certs {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logi-badges {
+            display: flex;
+            flex-wrap: wrap; /* Ensures content is responsive */
+            gap: 20px; /* Adds space between columns */
+            justify-content: space-around; /* Centers the columns horizontally */
+        }
+
+        .column {
+            flex: 1; /* Allows columns to share available space equally */
+            min-width: 300px; /* Ensures a minimum width for each column */
+            max-width: 500px; /* Optional: Adjust as needed */
+        }
+
+        .vendors {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          padding: 60px 40px;
+          max-width: 75%;
+          margin-left: auto; /* Center align */
+          margin-right: auto; /* Center align */
+        }
+
+        .vendors img, .vendors a {
+            margin: 25px;
+            flex: 1;
+            max-width: calc((100% / 6) - 30px);
+        }
+
+
+
+        @media (max-width: 768px) {
+            .certs {
+                flex-direction: column;
+            }
+
+            .certs_column1, .certs_column2 {
+                width: 100%;
+            }
+
+            .vendors img, .vendors a {
+                max-width: calc(35% - 20px);
+                margin: 15px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Certifications & Official Training</h1>
+        <h3>Click to Download</h3>
+    </header>
+
+    <header>
+      <h1 style="display: flex; justify-content: center;">Certifications</h1>
+    </header>
+    <main>
+      <section class="certs">
+        <section class="certs_column1" style="margin-right: 20px">
+            <ul>
+              <h2 style="text-align: center;">Cisco</h2>
+              <br>
+                <li><a href="/assets/pdfs/Certifications/Cisco/700-150 - Introduction to Cisco Sales.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Cisco - 700-150 - Introduction to Cisco Sales</a></li>
+                <li><a styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Cisco - CCENT 100-105 - Entry Network Technician</a></li>
+                <li><a styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Cisco - CCNA R&S 200-125 - Network Administrator Route & Switch</a></li>              
+                <!-- Add more reviews as needed -->
+            </ul>
+            <ul>
+              <h2 style="text-align: center;">Dell</h2>
+              <br>
+                <li><a href="/assets/pdfs/Certifications/Dell/HOL-2140-01-NET - VMware SD-WAN by Velocloud - Getting Started 4-7-21.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Dell - VMWare SDWAN by Velocloud - Getting Started</a></li>
+                <li><a href="/assets/pdfs/Certifications/Dell/VMware SD-WAN by VeloCloud OEM - Support and Deployment - Recorded Vendor-Led Training.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Dell - VMWare SDWAN by Velocloud - Support & Deploy</a></li>
+                <li><a href="/assets/pdfs/Certifications/Dell/VTSP SD-WAN 2019 - Introduction to VMware SD-WAN 4-7-21.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Dell - VTSP SDWAN 2019 - Intro to VMWare SDWAN</a></li>
+                <li><a href="/assets/pdfs/Certifications/Dell/VTSP SD-WAN 2019 - VMware Technical Solutions Professional 4-7-21.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Dell - VTSP SDWAN 2019 - VMWare Technical Solutions Professional</a></li>
+                <li><a href="/assets/pdfs/Certifications/Dell/VxRail Security Technical Implementation Guide (STIG) Compliance.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Dell - VxRail STIG Compliance</a></li>
+                <!-- Add more certs as needed -->
+            </ul>
+            <ul>
+              <h2 style="text-align: center;">Fortinet</h2>
+              <br>
+                <li><a href="/assets/pdfs/Certifications/Fortinet/Certs/Fortinet - NSE1 - Network Security Associate.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Fortinet - NSE1 - Network Security Associate</a></li>
+                <li><a href="/assets/pdfs/Certifications/Fortinet/Certs/Fortinet - NSE2 - Network Security Associate.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Fortinet - NSE2 - Network Security Associate</a></li>
+                <li><a href="/assets/pdfs/Certifications/Fortinet/Certs/Fortinet - NSE3 - Network Security Associate.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Fortinet - NSE3 - Network Security Associate</a></li>
+                <li><a href="/assets/pdfs/Certifications/Fortinet/Certs/Fortinet - FCF Cybersecurity - 11062023.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Fortinet - FCF Cybersecurity</a></li>
+                <li><a href="/assets/pdfs/Certifications/Fortinet/Certs/Fortinet - FCA Cybersecurity - 11052023.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Fortinet - FCA Cybersecurity</a></li>
+                <!-- Add more certs as needed -->
+            </ul>
+        </section>
+        <section class="certs_column2">
+            <ul>
+              <h2 style="text-align: center;">Meraki</h2>
+              <br>
+                <li><a href="/assets/pdfs/Certifications/Meraki/Partner CE/Meraki - CMNA Certificate.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Meraki - CMNA Certificate (2018 & 2024)</a></li>
+                <!-- Add more certs as needed -->
+            </ul>
+            <ul>
+              <h2 style="text-align: center;">VMWare</h2>
+              <br>
+                <li><a href="/assets/pdfs/Certifications/VMware/VMware vSAN Plan and Deploy v7.0 Cert.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">VMware - vSAN Plan and Deploy v7.0 Cert</a></li>
+                <li><a styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">VMware - Install, Configure & Manage v7.0 Cert</a></li>
+                <li><a href="/assets/pdfs/Certifications/VMware/VSP-SDWAN 2021.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">VSP-SDWAN 2021</a></li>
+                <li><a href="/assets/pdfs/Certifications/VMware/VSP-TZ VMWare Tanzu Standard 2021.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">VSP-TZ VMWare Tanzu Standard 2021</a></li>
+                <li><a href="/assets/pdfs/Certifications/VMware/VTSP-CB Carbon Black Endpoint Protection 2020.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">VTSP-CB Carbon Black Endpoint Protection 2020</a></li>
+                <li><a href="/assets/pdfs/Certifications/VMware/VTSP-DAV Desktop and App Virtualization 2021.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">VTSP-DAV Desktop and App Virtualization 2021</a></li>
+                <li><a href="/assets/pdfs/Certifications/VMware/VTSP-SASE 2021.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">VTSP-SASE 2021</a></li>
+                <li><a href="/assets/pdfs/Certifications/VMware/VTSP-TZ VMWare Tanzu Standard 2021.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">VTSP-TZ VMWare Tanzu Standard 2021</a></li>
+                <!-- Add more certs as needed -->
+            </ul>
+            <ul>
+              <h2 style="text-align: center;">Zscaler</h2>
+              <br>
+                <li><a href="/assets/pdfs/Certifications/Zscaler/ZCCA-IA Internet Access 10-10-19.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Zscaler - ZCCA-IA - Internet Access</a></li>
+                <li><a href="/assets/pdfs/Certifications/Zscaler/ZCCA-PA Private Access 10-18-19.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Zscaler - ZCCA-PA - Private Access</a></li>
+                <li><a href="/assets/pdfs/Certifications/Zscaler/ZCTS Cloud Transformation Specialist 09-16-19.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Zscaler - ZCTS - Cloud Transformation Specialist</a></li>
+                <!-- Add more certs as needed -->
+            </ul>
+        </section>
+      </section>
+      
+
+    <header>
+      <h1 style="display: flex; justify-content: center;">Partner Training / Continuing Education</h1>
+    </header>
+
+    <section class="CE">
+      <ul>
+        <h2 style="text-align: center;">Fortinet Partner Learning</h2>
+        <br>
+          <li><a href="/assets/pdfs/Certifications/Fortinet/Partner CE/Fortinet - Fast Track - Fabric Mgmt - Reduce Complex Operations - 11212023.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;"><b>Fast Track - Fabric Mgmt - Reduce Complex Operations</b> - <i>Completed Nov. 11, 2023</i></a></li>
+          <li><a href="/assets/pdfs/Certifications/Fortinet/Partner CE/Fortinet - Fast Track - Security Driven Networking - Constructing a Secure SDWAN Arch. - 12122023.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;"><b>Fast Track - Security Driven Networking - Constructing a Secure SDWAN Arch.</b> - <i>Completed Dec. 12, 2023</i></a></li>
+          <li><a href="/assets/pdfs/Certifications/Fortinet/Partner CE/Fortinet - Fast Track - Security Driven Networking - Fortifying the Enterprise Network - 12052023.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;"><b>Fast Track - Security Driven Networking - Fortifying the Enterprise Network</b> - <i>Completed Dec. 05, 2023</i></a></li>
+          <li><a href="/assets/pdfs/Certifications/Fortinet/Partner CE/Fortinet - Fast Track - Security Driven Networking - Intro to Fortinet Security - 11282023.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;"><b>Fast Track - Security Driven Networking - Intro to Fortinet Security</b> - <i>Completed Nov. 28, 2023</i></a></li>
+          <li><a href="/assets/pdfs/Certifications/Fortinet/Partner CE/Fortinet - SDWAN Sales Training - 12092023.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;"><b>SDWAN Sales Training</b> - <i>Completed Dec. 09, 2023</i></a></li>
+          <!-- Add more certs as needed -->
+      </ul>
+      <ul>
+        <h2 style="text-align: center;">Meraki Partner Learning</h2>
+        <br>
+          <li><a href="https://learning.meraki.net/#/online-courses/1ceb43b8-e35f-4c24-920e-3de9820243be" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;"><b>Introducing the Meraki Platform</b> - <i>Completed Dec. 08, 2023</i></a></li>
+          <li><a href="https://learning.meraki.net/#/online-courses/5952c420-d0e4-48d0-8529-aca918eb056c" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;"><b>Meraki Dashboard Basics</b> - <i>Completed Dec. 08, 2023</i></a></li>
+          <li><a href="https://learning.meraki.net/#/online-courses/af7c1f1e-fa11-4593-adab-76e66d2b6a44" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;"><b>Licensing and Inventory</b> - <i>Completed Dec. 08, 2023</i></a></li>  
+          <li><a href="https://learning.meraki.net/#/online-courses/26524307-d11b-437f-a2ff-5a15468690fc" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;"><b>Firmware and Cross-Platform Features</b> - <i>Completed Dec. 08, 2023</i></a></li>              
+          <li><a href="https://learning.meraki.net/#/online-courses/c38a9132-020d-4120-aec9-1764d7f23193" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;"><b>Monitoring, Reporting, and Alerts</b> - <i>Completed Dec. 11, 2023</i></a></li> 
+          <li><a href="https://learning.meraki.net/#/online-courses/53e7801a-310f-45c8-aa34-009681f2ac9c" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;"><b>Meraki 360+ Activities</b> - <i>Completed Jan. 09, 2023</i></a></li> 
+          <li><a href="https://learning.meraki.net/#/curricula/ca7efd43-ab5c-4c6b-a58b-f6723d452157" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;"><b>Meraki 360+ eCMNA</b> - <i>Completed Jan. 09, 2023</i></a></li> 
+          <!-- Add more reviews as needed -->
+      </ul>
+      <ul>
+        <h2 style="text-align: center;">SentinelOne Partner Learning</h2>
+        <br>
+        <h3 style="text-align: center;">Badges</h3>
+        <br>
+        <div class="s1-badges">
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <img src="/assets/images/SentinelOne/2024/Pre-Sales Professional - Sales Engineer Professional.png" alt="SentinelOne Sales Engineer Professional" style="width: 50px; height: auto; margin-right: 15px;">
+                <a href="/assets/images/SentinelOne/2024/Pre-Sales Professional - Sales Engineer Professional.png" target="_blank" style="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none;">
+                    <b>SentinelOne Sales Engineer Professional</b> - <i>Completed Aug. 2024</i>
+                </a>
+            </li>
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <img src="/assets/images/SentinelOne/2024/Sales Professional - Sales Professional.png" alt="SentinelOne Sales Professional" style="width: 50px; height: auto; margin-right: 15px;">
+                <a href="/assets/images/SentinelOne/2024/Sales Professional - Sales Professional.png" target="_blank" style="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none;">
+                    <b>SentinelOne Sales Professional</b> - <i>Completed Aug. 2024</i>
+                </a>
+            </li>
+        </div>
+        <h3 style="text-align: center;">Certifications</h3>
+        <br>
+        <div class="s1-certs">
+          <li><a href="/assets/pdfs/Certifications/SentinelOne/Partner CE/Partners - Singularity Identity - Foundations - 08232024.pdf" alt="Singularity Identity - Foundations" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;"><b>Singularity Identity - Foundations</b> - <i>Completed Aug. 2024</i></a></li>
+          <li><a href="/assets/pdfs/Certifications/SentinelOne/Partner CE/Partners - Singularity Identity - Sales Fundamentals - 08232024.pdf" alt="Singularity Identity - Sales Fundamentals" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;"><b>Singularity Identity - Sales Fundamentals</b> - <i>Completed Aug. 2024</i></a></li>
+          <li><a href="/assets/pdfs/Certifications/SentinelOne/Partner CE/Partners - SentinelOne Pre-Sales-Tech Accreditation Fundamentals - 08252024.pdf" alt="Pre-Sales/Tech Accreditation Fundamentals" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;"><b>SentinelOne Pre-Sales/Tech Accreditation Fundamentals</b> - <i>Completed Aug. 2024</i></a></li>  
+          <li><a href="/assets/pdfs/Certifications/SentinelOne/Partner CE/Partners - SentinelOne Pre-Sales-Tech Accreditation Applied - 08262024.pdf" alt="SentinelOne Pre-Sales/Tech Accreditation Applied" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;"><b>SentinelOne Pre-Sales/Tech Accreditation Applied</b> - <i>Completed Aug. 2024</i></a></li>              
+          <li><a href="/assets/pdfs/Certifications/SentinelOne/Partner CE/Partners - SentinelOne Sales Fundamentals - 08232024.pdf" alt="SentinelOne Sales Fundamentals" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;"><b>SentinelOne Sales Fundamentals</b> - <i>Completed Aug. 2024</i></a></li> 
+          <li><a href="/assets/pdfs/Certifications/SentinelOne/Partner CE/Partners - SentinelOne Sales Accreditation Applied - 08232024.pdf" alt="SentinelOne Sales Accreditation Applied" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;"><b>SentinelOne Sales Accreditation Applied</b> - <i>Completed Aug. 2024</i></a></li>         
+          <!-- Add more reviews as needed -->
+        </div>
+      </ul>
+      <ul>
+        <h3 style="text-align: center;">Logitech Partner Learning</h3>
+        <br>
+        <div class="logi-badges">
+            <div class="column">
+                <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                    <img src="/assets/images/Logitech/2024/Logitech - BYOD Specialist - O - 2024.png" alt="BYOD Specialist 2024" style="width: 50px; height: auto; margin-right: 15px;">
+                    <a href="/assets/images/Logitech/2024/Logitech - BYOD Specialist - O - 2024.png" target="_blank" style="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none;">
+                        <b>Logitech - BYOD Specialist</b> - <i>Completed Feb. 2024</i>
+                    </a>
+                </li>
+                <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                    <img src="/assets/images/Logitech/2024/Logitech - Headset Specialist - D - 2024.png" alt="Headset Specialist 2024" style="width: 50px; height: auto; margin-right: 15px;">
+                    <a href="/assets/images/Logitech/2024/Logitech - Headset Specialist - D - 2024.png" target="_blank" style="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none;">
+                        <b>Logitech - Headset Specialist</b> - <i>Completed Feb. 2024</i>
+                    </a>
+                </li>
+                <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                    <img src="/assets/images/Logitech/2024/Logitech - Logi Dock Specialist - D - 2024.png" alt="Logi Dock Specialist 2024" style="width: 50px; height: auto; margin-right: 15px;">
+                    <a href="/assets/images/Logitech/2024/Logitech - Logi Dock Specialist - D - 2024.png" target="_blank" style="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none;">
+                        <b>Logitech - Logi Dock Specialist</b> - <i>Completed Feb. 2024</i>
+                    </a>
+                </li>
+                <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                    <img src="/assets/images/Logitech/2024/Logitech - Rally Specialist - O - 2024.png" alt="Rally Specialist 2024" style="width: 50px; height: auto; margin-right: 15px;">
+                    <a href="/assets/images/Logitech/2024/Logitech - Rally Specialist - O - 2024.png" target="_blank" style="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none;">
+                        <b>Logitech - Rally Specialist</b> - <i>Completed Feb. 2024</i>
+                    </a>
+                </li>
+                <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                    <img src="/assets/images/Logitech/2024/Logitech - Room Solution Specialist - O - 2024.png" alt="Room Solution Specialist 2024" style="width: 50px; height: auto; margin-right: 15px;">
+                    <a href="/assets/images/Logitech/2024/Logitech - Room Solution Specialist - O - 2024.png" target="_blank" style="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none;">
+                        <b>Logitech - Room Solution Specialist</b> - <i>Completed Feb. 2024</i>
+                    </a>
+                </li>
+                <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                    <img src="/assets/images/Logitech/2024/Logitech - Scribe Specialist - O - 2024.png" alt="Scribe Specialist 2024" style="width: 50px; height: auto; margin-right: 15px;">
+                    <a href="/assets/images/Logitech/2024/Logitech - Scribe Specialist - O - 2024.png" target="_blank" style="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none;">
+                        <b>Logitech - Scribe Specialist</b> - <i>Completed Feb. 2024</i>
+                    </a>
+                </li>
+            </div>
+            <div class="column">
+                <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                    <img src="/assets/images/Logitech/2024/Logitech - Swytch Specialist - O - 2024.png" alt="Swytch Specialist 2024" style="width: 50px; height: auto; margin-right: 15px;">
+                    <a href="/assets/images/Logitech/2024/Logitech - Swytch Specialist - O - 2024.png" target="_blank" style="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none;">
+                        <b>Logitech - Swytch Specialist</b> - <i>Completed Feb. 2024</i>
+                    </a>
+                </li>
+                <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                    <img src="/assets/images/Logitech/2024/Logitech - Sync Specialist - H - 2024.png" alt="Sync Specialist 2024" style="width: 50px; height: auto; margin-right: 15px;">
+                    <a href="/assets/images/Logitech/2024/Logitech - Sync Specialist - H - 2024.png" target="_blank" style="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none;">
+                        <b>Logitech - Sync Specialist</b> - <i>Completed Feb. 2024</i>
+                    </a>
+                </li>
+                <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                    <img src="/assets/images/Logitech/2024/Logitech - Tap Specialist - O - 2024.png" alt="Tap Specialist 2024" style="width: 50px; height: auto; margin-right: 15px;">
+                    <a href="/assets/images/Logitech/2024/Logitech - Tap Specialist - O - 2024.png" target="_blank" style="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none;">
+                        <b>Logitech - Tap Specialist</b> - <i>Completed Feb. 2024</i>
+                    </a>
+                </li>
+                <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                    <img src="/assets/images/Logitech/2024/Logitech - Video Collab Specialist - 2024.png" alt="Video Collab Specialist 2024" style="width: 50px; height: auto; margin-right: 15px;">
+                    <a href="/assets/images/Logitech/2024/Logitech - Video Collab Specialist - 2024.png" target="_blank" style="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none;">
+                        <b>Logitech - Video Collab Specialist</b> - <i>Completed Feb. 2024</i>
+                    </a>
+                </li>
+                <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                    <img src="/assets/images/Logitech/2024/Logitech - Webcam Specialist - D - 2024.png" alt="Webcam Specialist 2024" style="width: 50px; height: auto; margin-right: 15px;">
+                    <a href="/assets/images/Logitech/2024/Logitech - Webcam Specialist - D - 2024.png" target="_blank" style="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none;">
+                        <b>Logitech - Webcam Specialist</b> - <i>Completed Feb. 2024</i>
+                    </a>
+                </li>
+            </div>
+        </div>
+      </ul>
+      <ul>
+        <h3 style="text-align: center;">Learning Platforms</h3>
+        <br>
+          <!-- Non Working Public Profiles -->
+          <!-- 
+          <li><a href="https://www.udemy.com/user/jordan-levinson/" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Udemy Profile</i></a></li>
+            -->
+          <li><a href="https://app.pluralsight.com/profile/jvlevinson" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Pluralsight Profile - <b>110+ Badges Earned</b></i></a></li>
+          <!-- Add more certs as needed -->
+      </ul>
+    </section>
+
+    <header>
+      <h1 style="display: flex; justify-content: center;">Education</h1>
+    </header>
+    
+    <div class="schooling" style="display: flex; align-items: center; justify-content: center;"> <!-- Flex container -->
+      <img style="width: 50px; margin-right: 20px; background-color: hsl(0, 0%, 90%); transition: background-color 300ms;" src="/assets/images/HarvardX_Logo.jpg" alt="harvard_img">
+      <p>HarvardX - Artificial Intelligence, ML & Data Science <strong><i>(on-going 2023-25)</i></strong></p>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: center;"> <!-- Flex container -->
+      <img style="width: 50px; margin-right: 20px; transition: background-color 300ms;" src="https://www.lonestar.edu/img/logo/logo.svg" alt="harvard_img">
+      <p>Lonestar College Cyfair - Computer Science <strong><i>(on-hold as of 2021)</i></strong></p>
+    </div>
+
+  <header>
+    <h1 style="display: flex; justify-content: center;">Vendor Experience</h1>
+  </header>
+  <div class="vendors">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Fortinet_logo.svg" alt="Fortinet"/>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg" alt="Cisco" height="85%" width="auto" style="height: 85%;" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Cisco_Webex_logo_-_Brandlogos.net.svg" alt="Webex" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Juniper_Networks_logo.svg" alt="Juniper" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Vmware.svg" alt="Vmware" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Meraki_Logo_2016_transparent.svg" alt="Meraki"/>
+    <img src="/assets/images/zscaler-logo.svg" alt="Zscaler"/>
+    <img src="/assets/images/cradlepoint.svg" alt="Cradlepoint"/>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" class="AWS" height="85%" width="auto" style="height: 85%;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Arista-networks-logo.svg" alt="Arista" />
+    <img src="https://raw.githubusercontent.com/Jordanl91/jekyll-theme-minimal-resume/master/assets/images/connectwise-seeklogo.com.svg" alt="Connectwise"/>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Duo_Logo_Green.svg" alt="DUO" />
+    <img src="https://logosdownload.com/logo/yealink-logo.svg" alt="Yealink"/>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Axis_Communications_logo.svg" alt="Axis" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Hewlett_Packard_Enterprise_logo.svg" alt="HPE" />
+  </div>        
+    </main>
+
+    <footer>
+        <p style="display: flex; justify-content: center;"><em>(and much more)</em></p>
+    </footer>
+</body>
+
+</html>
+

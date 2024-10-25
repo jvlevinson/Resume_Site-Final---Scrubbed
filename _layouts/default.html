@@ -1,0 +1,21 @@
+<head>
+  <!-- Include CSS and other head elements -->
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+  {% include header.html %}
+  <section id="about">
+      {% include about.html %}
+  </section>
+  {{ content }}
+  {% include footer.html %}
+  
+  <!-- Include the particles.js library -->
+  <script src="{{ '/assets/js/particles.min.js' | prepend: site.baseurl }}"></script>
+  
+  <!-- Include the main.js script that initializes particles for both hero and footer -->
+  <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
+
+  <!-- Include the sweet-scroll.min.js library -->
+  <script src="{{ '/assets/js/sweet-scroll.min.js' | prepend: site.baseurl }}"></script>
+</body>

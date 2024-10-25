@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>References</title>
+    <link rel="shortcut icon" type="image/png" href="/assets/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .header2 {
+        font-family: 'Montserrat',sans-serif;
+        z-index: 1;
+        text-align: center;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: 0 auto;
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        max-width: 75%;
+        }
+
+        .header2 h1 {
+            text-align: center;
+            font-size: 76px;
+            color: #fff;
+            margin: 0;
+        }
+
+        .header2 .site-description {
+            font-size: 34px;
+            display: block;
+            line-height: 1;
+            color: #fff;
+            margin-top: 10px;
+        }
+        
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav-item {
+            margin: 5px 0;
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        .site-title {
+            font-size: 24px;
+        }
+
+        /* Styles for desktop view */
+        @media (min-width: 768px) {
+        .nav-links {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .nav-item {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .site-title {
+            font-size: 76px;
+        }
+    
+    }
+    </style>
+</head>
+
+<body>
+    <div id="particles-js">
+        <div class="header2">
+            <div class="nav-links" style="height: 45px;">
+                <a aria-label="Home" href="/" class="nav-item">Home</a>
+                <a aria-label="Learning" href="/learning.html" class="nav-item">Learning</a>
+                <!-- <a aria-label="Blog" href="/blog.html" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">Blog</a> -->
+                <a aria-label="My Resume" href="/resume.html" class="nav-item">Resume</a>
+            </div>
+            <h1 style="padding-top: 10px;">
+                <span class="site-title">References</span>
+                <span class="site-description">Letters of Recommendation</span>
+            </h1> 
+        </div>
+        <a class="down" href="#references" data-scroll>
+            <i class="icon fa fa-chevron-down" aria-hidden="true"></i>
+        </a>
+    </div>
+</body>
+
+</html>

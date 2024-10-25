@@ -1,0 +1,26 @@
+---
+layout: learning
+---
+<!DOCTYPE html>
+<link rel="shortcut icon" type="image/png" href="{{ '/assets/favicon.png' }}" >
+<link rel="stylesheet" href="../assets/css/devicon.min.css">
+<html lang="en"></html>
+</div>
+{% include head.html %}
+<body>
+	{% include learn_header.html %}
+	<section id="learning">
+	  {% include learning.html %}
+	</section>
+	  {{ content }}
+	{% include footer.html %}
+  
+  <!-- Include the particles.js library -->
+  <script src="{{ '/assets/js/particles.min.js' | prepend: site.baseurl }}"></script>
+  
+  <!-- Include the main.js script that initializes particles for both hero and footer -->
+  <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
+
+  <!-- Include the sweet-scroll.min.js library -->
+  <script src="{{ '/assets/js/sweet-scroll.min.js' | prepend: site.baseurl }}"></script>
+</body>

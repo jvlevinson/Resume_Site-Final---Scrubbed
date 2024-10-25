@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>References & Recommendations</title>
+    <link rel="shortcut icon" type="image/png" href="/assets/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,200italic" rel="stylesheet">
+
+    <style>
+        body {
+            background: #eee;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 300;
+        }
+
+        header h1 {
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 80px auto;
+            background: white;
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0 2%;
+        }
+
+        .review-section {
+            width: calc(33.33% - 2%);
+            margin: 1%;
+            border-radius: 20px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            box-sizing: border-box;
+            max-width: 75%;
+        }
+
+        .avatar_box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .avatar {
+            vertical-align: middle;
+            border-radius: 50%;
+            width: 85px;
+            height: 85px;
+            margin-right: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        p.download-link {
+            margin-top: 10px;
+            margin-bottom: 0px;
+            color: #555;
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+        }
+
+		.testimonial-quote {
+			font-size: 16px;
+		}
+		
+		.testimonial-quote blockquote {
+			/* Negate theme styles */
+			border: 0;
+			margin: 0;
+			padding: 0;
+		
+			background: none;
+			color: gray;
+			font-family: Georgia, serif;
+			font-size: 1.5em;
+			font-style: italic;
+			line-height: 1.4 !important;
+			margin: 0;
+			position: relative;
+			text-shadow: 0 1px white;
+			z-index: 600;
+		}
+		
+		.testimonial-quote blockquote * {
+			box-sizing: border-box; 
+		}
+		
+		.testimonial-quote blockquote p {
+			color: #75808a; 
+			line-height: 1.4 !important;
+		}
+		
+		.testimonial-quote blockquote p:first-child:before {
+			content: '\201C';
+			color: #81bedb;
+			font-size: 7.5em;
+			font-weight: 700;
+			opacity: .3;
+			position: absolute;
+			top: -.4em;
+			left: -.2em;    
+			text-shadow: none;
+			z-index: -300;
+		}
+		
+		.testimonial-quote img {
+			border: 3px solid #9CC1D3;
+			border-radius: 50%;
+			display: block;
+			width: 120px;
+			height: 120px;
+			position: absolute;
+			top: -.2em; 
+			left: 0;    
+		}
+		
+		.testimonial-quote cite {
+			color: gray;
+			display: block;
+			font-size: .8em; 
+		}
+		
+		.testimonial-quote cite span {
+			color: #5e5e5e;
+			font-size: 1em;
+			font-style: normal;
+			font-weight: 700;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			text-shadow: 0 1px white; 
+		}
+		
+		.testimonial-quote {
+			position: relative; 
+		}
+		
+		.testimonial-quote .quote-container {
+			padding-left: 160px; 
+		}
+		
+		.testimonial-quote.right .quote-container {
+			padding-left: 0;
+			padding-right: 160px; 
+		}
+		
+		.testimonial-quote.right img {
+			left: auto;
+			right: 0;
+		}
+		
+		.testimonial-quote.right cite {
+			text-align: right; 
+		}
+
+        @media (max-width: 768px) {
+            .flex-container,
+            .avatar_box {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .avatar {
+                margin: 0 auto 1em;
+            }
+
+            .review-section {
+                width: 90%;
+            }
+
+            .testimonial-quote .quote-container,
+            .testimonial-quote.right .quote-container {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .testimonial-quote img,
+            .testimonial-quote.right img {
+                position: static;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Letters of Recommendation & References</h1>
+    </header>
+    <main>
+        <section class="reviews">
+            <div class="flex-container">
+                <!-- First Review Section -->
+                <div class="review-section">
+                    <div class="avatar_box">
+                        <h2 style="padding-top: 0px;">Sean Ward<br>Meriplex</h2>
+                        <a href="https://www.linkedin.com/in/sean-ward-1527bb122/" target="_blank"><img src="/assets/images/sward.png" class="avatar"></a>
+                    </div>
+                    <iframe src="/assets/pdfs/Letter of Recommendation - Sean Ward.pdf" width="100%" height="300" style="border: none"></iframe>
+                    <p class="download-link" style="margin-top: 10px; margin-bottom: 0px;"><a href="/assets/pdfs/Letter of Recommendation - Sean Ward.pdf" target="_blank" style="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex; justify-content: center;">Download Sean's Recommendation</a></p>
+                </div>
+                <!-- Second Review Section -->
+                <div class="review-section">
+                    <div class="avatar_box">
+                        <h2 style="padding-top: 0px;">David Black<br>GFI Digital</h2>
+                        <a  href="https://www.linkedin.com/in/ddb111/" target="_blank"><img src="/assets/images/dblack.png" class="avatar"></a>
+                    </div>
+                    <iframe src="/assets/pdfs/Letter of Recommendation - David Black.pdf"></iframe>
+                    <p class="download-link" style="margin-top: 10px; margin-bottom: 0px;"><a href="/assets/pdfs/Letter of Recommendation - David Black.pdf" target="_blank" style="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex; justify-content: center;">Download David's Recommendation</a></p>
+                </div>
+                <!-- Third Review Section -->
+                <div class="review-section">
+                    <div class="avatar_box">
+                        <h2 style="padding-top: 0px;">Rene Alvarez<br>Tetra Technologies</h2>
+                        <img src="https://www.une.edu/sites/default/files/2021-05/default-person.png" class="avatar">
+                    </div>
+                    <iframe src="/assets/pdfs/Letter of Recommendation - Rene Alvarez.pdf"></iframe>
+                    <p class="download-link" style="margin-top: 10px; margin-bottom: 0px;"><a href="/assets/pdfs/Letter of Recommendation - Rene Alvarez.pdf" target="_blank" style="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex; justify-content: center;">Download Rene's Recommendation</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+  <header>
+      <h1 style="display: flex; justify-content: center;">References</h1>
+  </header>
+  <div style="margin: 0 auto; padding: 40px; max-width: 75%;"> 
+
+    <div class="testimonial-quote group">
+        <a  href="https://www.linkedin.com/in/dwayne-duby-3b09a982/" target="_blank"><img src="/assets/images/dduby.png" class="avatar" style="margin-right: 0px;"></a>
+        <div class="quote-container">
+            <blockquote>
+                <p>I had the opportunity to work with Jordan both as a contractor and a coworker. I was able to witness both the breadth and scope of his vast knowledge. He has an acute attention to detail and possesses both the drive and determination to push projects past the finish line. I hope to work with him again on future projects."</p>
+            </blockquote>  
+            <cite><span>Dwayne D.</span><br>
+                Senior Network Engineer<br>
+            </cite>
+        </div>
+    </div>    
+        
+    <hr style="margin: 60px auto; opacity: .5;">
+       
+    <div class="testimonial-quote group right">
+        <a href="https://www.linkedin.com/in/laura-stille-90082350/" target="_blank"><img src="/assets/images/lstille.png" class="avatar" style="margin-right: 0px;"></a>
+        <div class="quote-container">
+            <div>
+                <blockquote>
+                    <p>In working with Jordan for over two years I witnessed his relentless work ethic first hand. He is always willing to go above and beyond to support customers and partner teams. Jordan is cool under pressure and always finds a way to help the team meet deadlines. His broad depth of technical knowledge and experience shine when faced with complex network infrastructure. I am constantly inspired by Jordan's drive to learn new technologies and I hope to have the pleasure of working with him again one day."</p>
+                </blockquote>  
+                <cite><span>Laura S.</span><br>
+                    Senior Network Engineer<br>
+                    Meta 
+                </cite>
+                <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" class="avatar_meta_img" style="margin-right: 0px;"> -->
+            </div>
+        </div>
+    </div>
+	
+    <hr style="margin: 60px auto; opacity: .5;">
+    
+    <div class="testimonial-quote group">
+        <a href="https://www.linkedin.com/in/frcantu/" target="_blank"><img src="/assets/images/fcantu.png" class="avatar" style="margin-right: 0px;"></a>
+        <div class="quote-container">
+            <blockquote>
+                <p>Jordan is an exceptional IT professional with an unwavering passion for technology. His dedication to his work is unparalleled. I wholeheartedly recommend Jordan for any projects requiring meticulous attention to detail. Jordan consistently delivers results promptly and with the utmost professionalism."</p>
+            </blockquote>  
+            <cite><span>Francisco C.</span><br>
+                Cloud Ops Engineer<br>
+                AWS
+            </cite>
+            <!-- <img src="https://logohistory.net/wp-content/uploads/2023/06/AWS-Logo-PNG_015.png" class="avatar_aws_img" style="margin-right: 0px;"> -->
+        </div>
+    </div> 
+</body>
+
+</html>

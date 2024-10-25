@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tech Blog</title>
+  
+  
+  <link rel="stylesheet" href="/assets/css/devicon.min.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="{{ '/assets/favicon.png' }}" >
+   
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PNNBPG24');</script>
+    <!-- End Google Tag Manager -->  
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-094W7MB2CS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-094W7MB2CS');
+  </script>
+  <link rel="shortcut icon" type="image/png" href="/assets/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Add FontAwesome if you haven't already -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    .header2 {
+      font-family: 'Montserrat',sans-serif;
+      z-index: 1;
+      text-align: center;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: 0 auto;
+      -webkit-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+      max-width: 75%;
+    }
+
+    .header2 h1 {
+      text-align: center;
+      font-size: 76px;
+      color: #fff;
+      margin: 0;
+    }
+
+    .header2 .site-description {
+      font-size: 34px;
+      display: block;
+      line-height: 1;
+      color: #fff;
+      margin-top: 10px;
+    }
+
+
+    /* Default styles for mobile view */
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .nav-item {
+      margin: 5px 0;
+    }
+
+
+    .blog-posts {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 20px; /* Adjust the gap as needed */
+    }
+
+    .post {
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 20px;
+      border-radius: 8px;
+      flex: 0 1 calc(33.333% - 20px); /* Adjust the width for 3 columns, subtract gap */
+      /* For responsiveness, you might want to adjust the flex-basis in media queries */
+    }
+
+    .date-container {
+      font-weight: bold;
+    }
+
+    .post-content h2 {
+      margin-top: 10px;
+    }
+
+    .post-content p {
+      color: #666;
+    }
+
+
+    /* Styles for desktop view */
+    @media (min-width: 768px) {
+      .nav-links {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .nav-item {
+        margin: 0 10px;
+        text-decoration: none;
+      }
+
+      .blog-posts {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .post {
+        flex-basis:  0 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+ <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNNBPG24"
+   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="particles-js">
+    <div class="header2"> 
+      <div class="nav-links">
+        <a aria-label="Home" href="/#" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">Home</a>
+        <a aria-label="Learning" href="/learning.html" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">Learning</a>
+        <a aria-label="References" href="/references.html" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">References</a>
+        <a aria-label="My Resume" href="/resume.html" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">Resume</a>
+      </div>
+      <h1>
+        <span class="site-title">My Tech Blog</span>
+        <span class="site-description">Tech Journals and Blog Posts</span>
+      </h1>
+    </div>
+    <a class="down" href="#blogs" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+  </div>
+  
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- New Headers container-->
+
+    <!-- End New Headers container --> 
+
+
+<!-- backround above bar -->
+<section class="search-container">
+</section>
+
+
+<!-- Search Bar -->    
+ <section class="search-container2">
+    <form class="search-bar_journalcontain" id="sb_journal-container" action="/search" method="GET">
+        <div class="input-group">
+            <button id="search-button_journal" type="submit" class="search-button_journal">
+                <i class="fa fa-search"></i>
+            </button>
+            <input type="text" id="query" name="query" class="input-group_input" required />
+            <label for="query" class="input-group_label">Search Tech Journals...</label>
+        </div>
+    </form>
+</section>
+<!-- End Search Bar -->
+
+
+<!-- Blog container-->
+<section class="blog-posts">
+    <hr class="hr-line"> <!-- This is the new horizontal line -->
+    <article class="post">
+        <div class="date-container">
+            <div class="month">October</div>
+            <div class="day">21<sup>st</sup></div>
+        </div>
+        <div class="post-content">
+            <h2 id="journalh2"><a href="/blogs/2023/11_november_blogs/11222023_OpenAI_CEO-Employment.html">Unleashing the Power of Velocloud SD-WAN</a></h2>
+            <p id="journalp"> A Gateway to Revolutionary Networking</p>
+        </div>
+    </article>
+
+
+    <article class="post">
+        <div class="date-container">
+            <div class="month">July</div>
+            <div class="day">8<sup>th</sup></div>
+        </div>
+        <div class="post-content">
+            <h2 id="journalh2"><a href="/blog/2023/javosec-revolution-07082023.html">Revolutionizing the IT Landscape with Javosec</a></h2>
+            <p id="journalp">The Birth of Excellence.</p>
+        </div>
+    </article>
+</section>
+<!-- End Blog container-->
+
+<footer class="footer">
+    <!-- <p>&copy; {{ site.username }}</p> -->
+    <p>Built for Future Endeavors In Mind by <a href="https://www.linkedin.com/in/jvlevinson/">Jordan Levinson</a></p>
+</footer>
+<script src="/assets/js/particles.min.js"></script>
+<script src="/assets/js/sweet-scroll.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+</body>
+</html>

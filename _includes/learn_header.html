@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" type="image/png" href="/assets/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Add FontAwesome if you haven't already -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    .header2 {
+      font-family: 'Montserrat',sans-serif;
+      z-index: 1;
+      text-align: center;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: 0 auto;
+      -webkit-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+      max-width: 75%;
+    }
+
+    .header2 h1 {
+      text-align: center;
+      font-size: 76px;
+      color: #fff;
+      margin: 0;
+    }
+
+    .header2 .site-description {
+    font-size: 34px;
+    display: block;
+    line-height: 1;
+    color: #fff;
+    margin-top: 10px;
+    }
+
+    /* Default styles for mobile view */
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .nav-item {
+      margin: 5px 0;
+    }
+
+    .pluralsight-logo:hover {
+      transition: opacity 0.5s ease;
+      content: url('/assets/images/Pluralsight-us-hover-v1.0.svg');
+    }
+
+    .credly-logo:hover {
+      transition: opacity 0.5s ease;
+      content: url('/assets/images/credly-hover.svg');
+    }
+
+
+    /* Styles for desktop view */
+    @media (min-width: 768px) {
+      .nav-links {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .nav-item {
+        margin: 0 10px;
+        text-decoration: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js">
+    <div class="header2"> 
+      <div class="nav-links" style="height: 45px;">
+        <a aria-label="Home" href="/#" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">Home</a>
+        <!--<a aria-label="Blog" href="/blog.html" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">Blog</a> -->
+        <a aria-label="References" href="/references.html" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">References</a>
+        <a aria-label="My Resume" href="/resume.html" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">Resume</a>
+      </div>
+      <h1 style="padding-top: 10px;">
+        <span class="site-title">Certs & Education</span>
+        <span class="site-description">Certs, Education & Experience</span>
+      </h1>
+      <!-- Social Media Icons -->
+      <div class="header-icons">
+        <a aria-label="My Pluralsight" target="_blank" href="https://app.pluralsight.com/profile/jvlevinson"><img class="pluralsight-logo" src="/assets/images/Pluralsight-us-v1.0.svg" alt="Pluralsight" width="54" height="54" style="object-fit: contain;margin: 5px;border: 2px;"></a>
+        <a aria-label="My Credly" target="_blank" href="https://www.credly.com/users/jvlevinson/badges#"><img class="credly-logo" src="/assets/images/credly-svgrepo-com.svg" alt="Credly" width="54" height="54" style="object-fit: contain;margin: 25px;border: 2px;"></a>	
+      </div>	
+    </div>
+    <a class="down" href="#learning" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+  </div>
+</body>
+</html>
+

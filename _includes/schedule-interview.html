@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            padding-top: .5em;
+        }
+
+        .pdf-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: transparent;
+            font-size: 20px;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        a:hover {
+            background-color: transparent;
+            color: white;
+        }
+
+        iframe {
+            width: 90%;
+            height: 1000px;
+            border: none;
+            max-width: 1250px;
+        }
+
+        @media (min-width: 768px) {
+            iframe {
+                width: 60%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Schedule an Interview</h1>
+    <div class="pdf-container">
+        <iframe src="https://outlook.office365.com/owa/calendar/InterviewSchedule@javosec.com/bookings/s/uw9BCtakL0eUsBrt_-z-Kw2" style="border: 0" frameborder="0"></iframe>
+    </div>
+</body>
+</html>

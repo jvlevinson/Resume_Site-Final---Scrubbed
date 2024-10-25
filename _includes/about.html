@@ -1,0 +1,393 @@
+<style>
+  @import "compass/css3";
+  /* User Section Styles */
+  .user {
+      display: flex;
+      flex-wrap: wrap; /* Allows items to wrap if needed */
+      justify-content: space-between; /* Adds space between items */
+      max-width: 1200px; /* Contain within a reasonable width */
+      margin: 0 auto; /* Centers the section on the page */
+      padding: 20px; /* Adds some padding for spacing */
+  }
+
+  /* Tech Section Styles */
+  .tech {
+      flex: 1 1 calc(33.333% - 20px); /* Three items per row, adjust based on screen size */
+      max-width: 30%; /* Prevents tech sections from stretching too wide */
+      min-width: 280px; /* Sets a minimum width to keep elements from shrinking too much */
+      box-sizing: border-box; /* Includes padding and borders in the width calculation */
+      margin-bottom: 20px; /* Space at the bottom for visual separation */
+  }
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+      .user {
+          flex-direction: column; /* Stacks items vertically on smaller screens */
+          padding: 10px; /* Adjust padding for smaller viewports */
+      }
+      .tech {
+          width: 100%; /* Take full width in stacked mode */
+          max-width: 100%; /* Ensures tech sections don't go beyond container width */
+          margin-bottom: 20px; /* Maintains spacing between stacked items */
+      }
+      .testimonial-quote blockquote {
+        font-size: 1.2em;
+      }
+      .testimonial-quote {
+        width: 90%; /* Adjusted width for smaller screens */
+        padding: 5px; /* Reduced padding */
+        font-size: 14px; /* Adjusted font size */
+      }
+      .book-container {
+      flex-direction: column; /* Stack vertically on small screens */
+      align-items: center; /* Center the books horizontally */
+      }
+      .book {
+        width: 80%; /* Adjust the width to take more space on small screens */
+      }
+    }
+
+  /* Enhanced Image Styles */
+  .image-cropper {
+      width: 300px; /* Adjust as needed */
+      height: 300px; /* Should be equal to width for a perfect circle */
+      overflow: hidden;
+      border-radius: 50%;
+      margin-top: 20px; /* Margin added above the container */
+      position: relative; /* Allows absolute positioning of children */
+      z-index: 1; /* To layer particles behind */
+  }
+
+  .image-cropper img {
+      width: 100%; /* Ensures the image covers the whole container */
+      height: auto; /* Maintains aspect ratio */
+      vertical-align: middle;
+      position: relative; /* Ensure it stays on top */
+      z-index: 10; /* Ensures the image is above the particles */
+  }
+
+  #particles-js {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 5; /* Behind the image */
+  }
+
+  /* Heading Styles */
+  h1 {
+      margin-top: 0px;
+      padding-top: 10px;
+  }
+
+  /* Paragraph Styles */
+  p {
+      text-indent: 30px;
+  }
+
+  /* Tech Image Styles */
+  .tech img {
+      object-fit: contain;
+      height: 60px;
+      width: auto;
+  }
+  .testimonial-quote {
+    font-size: 16px;
+}
+
+.testimonial-quote blockquote {
+    /* Negate theme styles */
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+    background: none;
+    color: #555;
+    font-family: Georgia, serif;
+    font-size: 1.5em;
+    font-style: italic;
+    line-height: 1.4 !important;
+    margin: 0;
+    position: relative;
+    text-shadow: 0 1px white;
+    z-index: 600;
+}
+
+.testimonial-quote blockquote * {
+    box-sizing: border-box; 
+}
+
+.testimonial-quote blockquote p {
+    color: #555; 
+    line-height: 1.4 !important;
+}
+
+.testimonial-quote blockquote p:first-child:before {
+    content: '\201C';
+    color: #81bedb;
+    font-size: 7.5em;
+    font-weight: 700;
+    opacity: .3;
+    position: absolute;
+    top: -.4em;
+    left: -.2em;    
+    text-shadow: none;
+    z-index: -300;
+}
+
+.testimonial-quote blockquote p:after {
+    content: '\201D';
+    color: #81bedb;
+    font-size: 7.5em;
+    font-weight: 700;
+    opacity: .3;
+    position: absolute;
+    top: -.25em;
+    right: 0em;    
+    text-shadow: none;
+    z-index: -300;
+}
+.testimonial-quote img {
+    border: 3px solid #9CC1D3;
+    border-radius: 50%;
+    display: block;
+    width: 120px;
+    height: 120px;
+    /* Remove these lines */
+    /* position: absolute; */
+    /* top: -.2em; */
+    /* left: 0; */
+}
+
+.testimonial-quote cite {
+    color: #555;
+    display: block;
+    font-size: .8em;
+    text-align: center; /* Add this line */
+}
+  
+.testimonial-quote cite span {
+    color: #555;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0 1px white; 
+}
+
+.testimonial-quote {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.quote-container {
+    display: inline-block;
+    text-align: center; /* This will ensure the content inside remains left-aligned */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Book Section */
+.book-container {
+    display: flex;
+    flex-direction: row; /* Default to horizontal layout */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  .book {
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 180px; /* Adjust the width as needed */
+  }
+  .book img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  .book-title {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  .read-counter {
+    margin-top: 5px;
+    font-size: 1em;
+    color: #666;
+  }
+  
+</style>
+
+<body>
+  <div class="user-details">
+      <div class="image-cropper">
+          <img src="../assets/images/IMG_5804.PNG" class="rounded" />
+      </div>
+      <div class="testimonial-quote group">
+          <div class="quote-container">
+              <blockquote>
+                  <p>A Jack of all trades is a Master of None, but oftentimes <strong>BETTER</strong> than a Master of <u>One</u>.</p>
+              </blockquote> 
+              <cite><span>Robert Greene</span><br>Spectating on Actor-turned-Playwright<br>William Shakespeare - 1592</cite>
+          </div>
+      </div>    
+  </div>
+  
+  <h1 style="padding-top: 40px;">My Expertise</h1>
+  <p>{{ site.user_description }}</p>
+  <p>{{ site.user_description1 }}</p>
+</div>
+
+<h1>Current Top 5 Reads</h1>
+<div class="book-container">
+  <!-- Book 1 -->
+  <div class="book">
+    <div class="book-title">Great CEOs Are Lazy</div>
+    <img src="/assets/images/Great CEOs are Lazy By Jim Schleckser.jpg" alt="Great CEOs are Lazy By Jim Schleckser">
+    <div class="read-counter">Times Read: 8</div>
+  </div>
+  <!-- Book 2 -->
+  <div class="book">
+    <div class="book-title">Never Split the Difference</div>
+    <img src="/assets/images/Never Split the Difference By Chris Voss.jpg" alt="Never Split the Difference By Chris Voss">
+    <div class="read-counter">Times Read: 3</div>
+  </div>
+  <!-- Book 3 -->
+  <div class="book">
+    <div class="book-title">The Four Agreements</div>
+    <img src="/assets/images/The Four Agreements By Don Miguel Ruiz.jpg" alt="The Four Agreements By Don Miguel Ruiz">
+    <div class="read-counter">Times Read: 2</div>
+  </div>
+  <!-- Book 4 -->
+  <div class="book">
+    <div class="book-title">Ego Is the Enemy</div>
+    <img src="/assets/images/EGO is the Enemy By Ryan Holiday.jpg" alt="EGO is the Enemy By Ryan Holiday">
+    <div class="read-counter">Times Read: 4</div>
+  </div>
+  <!-- Book 5 -->
+  <div class="book">
+    <div class="book-title">Atomic Habits</div>
+    <img src="/assets/images/Atomic Habits By James Clear.jpg" alt="Atomic Habits By James Clear">
+    <div class="read-counter">Times Read: 3</div>
+  </div>
+</div>
+
+<!-- Repeated structure for tech details -->
+<div class="user">
+  <div class="tech">
+      <h2>Networks</h2>
+    <img src="https://finrange.com/storage/companies/logo/svg/NASDAQ_CSCO.svg" alt="Cisco" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
+    <img src="https://raw.githubusercontent.com/Jordanl91/jekyll-theme-minimal-resume/master/assets/images/Juniper%20Networks%20GreenSquare.svg" alt="Juniper" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
+    <img src="/assets/images/fortinet-thumbnail.png" alt="Fortinet" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
+    <p>Skilled in designing, implementing, and troubleshooting network infrastructures, I excel in both switching and routing domains to ensure seamless connectivity and optimal performance</p>  
+  </div>
+  <div class="tech">
+    <h2>Systems</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Dell_Logo.svg" alt="Dell" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
+    <img src="https://raw.githubusercontent.com/Jordanl91/jekyll-theme-minimal-resume/master/assets/images/Hewlett_Packard_Enterprise_Centered%20squared%20logo.svg" alt="HPE" width="auto" height="70" style="object-fit: contain; height: 70px; width: auto;" />    
+    <img src="https://gentrack.com/wp-content/uploads/2023/03/aws-circle-logo.svg" alt="" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />      
+    <p>Proficient in virtualization technologies, I adeptly manage and optimize complex system engineering tasks, ensuring streamlined operations and efficient infrastructure solutions.</p>
+</div>
+  <div class="tech">
+    <h2>Security</h2>
+    <img src="https://logosandtypes.com/wp-content/uploads/2022/04/zscaler.svg" alt="" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
+    <img src="https://images.crunchbase.com/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/ryh7y0vde26vo9zpgy0c" alt="" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
+    <img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_445b18a93ca42b2e20710d8fd8646a00/duo-security.png" class="js-product-img center-center detail-logo" alt="Duo Security Reviews" title="Duo Security Reviews" itemprop="image" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
+    <p>Skilled in security engineering, I secure networks, vigilantly monitor security events and implement timely patching, ensuring robust protection against potential threats and vulnerabilities.</p>
+  </div>
+</div>
+<div class="user">
+  <div class="tech">
+    <h2>Website Design</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Wordpress-Logo.svg" alt="" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
+    <p>Whether its internal or external web apps, I can generate web apps to present information or market a solution/product.</p>  
+  </div>
+  <div class="tech">
+    <h2>Automation</h2>
+    <img src="https://www.svgrepo.com/download/361365/terminal-bash.svg" alt="" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Ansible_logo.svg" alt="" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />      
+    <p>Most of my work has been in Python, but I am quite familiar with Bash and apps like Ansible as well.</p>
+  </div>
+  <div class="tech">
+    <h2>OS</h2>
+    <img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg" alt="" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2012.svg" alt="" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Openlogo-debianV2.svg" alt="" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
+    <p>Working knowledge in just about any OS</p>
+  </div>
+</div>
+<div class="user">
+  <div class="tech">
+    <h2>Tracking</h2>
+    <img src="https://www.logo.wine/a/logo/Salesforce.com/Salesforce.com-Logo.wine.svg" alt="" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/PRTG_Network_Monitor_logo.svg" alt="" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Grafana_logo.svg" alt="" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
+    <p>I take pride in my organizational skills, I am proficient in most major ticketing systems.</p>  
+  </div>
+  <div class="tech">
+    <h2>Architectural Design</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Microsoft_Office_Visio_%282019%29.svg"  alt="" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
+    <img src="/assets/images/Figma-logo.svg" alt="Figma-logo" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />      
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Diagrams.net_Logo.svg" alt="" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
+    <p>I possess a profound expertise in architecting comprehensive enterprise IT solutions, tailored to drive business growth and operational efficiency.</p>
+  </div>
+  <div class="tech">
+    <h2>Project Management</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Microsoft_Office_OneNote_%282019%E2%80%93present%29.svg" alt="" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Microsoft_Office_SharePoint_%282019%E2%80%93present%29.svg" alt="" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg" alt="" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
+    <p>I excel as a project manager, consistently delivering projects on time and within budget while fostering team collaboration and maintaining clear communication with stakeholders.</p>
+  </div>
+</div>
+<div class="user">
+  <div class="tech">
+    <h2>AI</h2>
+    <img src="https://logos-download.com/wp-content/uploads/2022/06/ChatGPT_Logo.svg" alt="" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
+    <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="huggingface" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
+    <img src="https://raw.githubusercontent.com/Jordanl91/jekyll-theme-minimal-resume/master/assets/images/Bing%20Ai%20Logo%20Vector.svg" alt="" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
+    <p>I recently found my passion in AI, since then I have been learning all kinds of AI modeling. Leveraging OpenAI, HugginFace and others, I have been self deploying AI into my personal Homelab, with txt-to-txt, txt-to-image, conversational, and summerization.  </p>  
+  </div>
+</div>
+<!-- Include Particles.js Script -->
+<script src="/assets/js/particles.min.js"></script> 
+<script>
+    particlesJS('particles-js', {
+        "particles": {
+            "number": { "value": 50, "density": { "enable": true, "value_area": 800 } },
+            "color": { "value": "#ffffff" },
+            "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 } },
+            "opacity": { "value": 0.5, "random": true, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } },
+            "size": { "value": 3, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } },
+            "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 },
+            "move": { "enable": true, "speed": 6, "direction": "none", "random": false, "straight": false, "out_mode": "bounce", "bounce": true, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": { "enable": true, "mode": "grab" },
+                "onclick": { "enable": true, "mode": "push" },
+                "resize": true
+            },
+            "modes": {
+                "grab": { "distance": 140, "line_linked": { "opacity": 1 } },
+                "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 },
+                "repulse": { "distance": 200, "duration": 0.4 },
+                "push": { "particles_nb": 4 },
+                "remove": { "particles_nb": 2 }
+            }
+        },
+        "retina_detect": true
+    });
+</script>
+</body>

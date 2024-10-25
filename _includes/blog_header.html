@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tech Blog</title>
+  
+  
+  <link rel="stylesheet" href="/assets/css/devicon.min.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="{{ '/assets/favicon.png' }}" >
+   
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <link rel="shortcut icon" type="image/png" href="/assets/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Add FontAwesome if you haven't already -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    .header2 {
+      font-family: 'Montserrat',sans-serif;
+      z-index: 1;
+      text-align: center;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: 0 auto;
+      -webkit-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+      max-width: 75%;
+    }
+
+    .header2 h1 {
+      text-align: center;
+      font-size: 76px;
+      color: #fff;
+      margin: 0;
+    }
+
+    .header2 .site-description {
+      font-size: 34px;
+      display: block;
+      line-height: 1;
+      color: #fff;
+      margin-top: 10px;
+    }
+
+
+    /* Default styles for mobile view */
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .nav-item {
+      margin: 5px 0;
+    }
+
+    /*
+    .blog-posts {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Creates a responsive layout with minimum column width of 300px *//*
+      gap: 20px; /* Adjust the gap as needed *//*
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 20px; /* Adjust the gap as needed *//*
+    }*/
+    /*
+    .post {
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 20px;
+      border-radius: 8px;
+      flex: 0 1 calc(33.333% - 20px); /* Adjust the width for 3 columns, subtract gap */
+      /* For responsiveness, you might want to adjust the flex-basis in media queries *//*
+    }*/
+
+
+    .post-content h2 {
+      margin-top: 10px;
+    }
+
+    .post-content p {
+      color: #666;
+    }
+
+    /* General body styling */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    /* Search Bar */
+    .search-container2 {
+        padding: 20px;
+        background: #333;
+        text-align: center;
+    }
+
+    .input-group {
+        display: inline-flex;
+        position: relative;
+    }
+
+    .input-group_input {
+        width: 300px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+    }
+
+    .search-button_journal {
+        background-color: #555;
+        border: none;
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+    }
+
+    .search-button_journal i {
+        font-size: 1em;
+    }
+
+    /* Blog Posts */
+    .blog-posts {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .post {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .post:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .date-container {
+        background: #333;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .month {
+        font-size: 0.8em;
+    }
+
+    .day {
+        font-size: 1.5em;
+    }
+
+    .post-title {
+        font-size: 1.2em;
+        margin: 0;
+    }
+
+    .post-description {
+        color: #777;
+    }
+
+    .read-more {
+        margin-top: 10px;
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .read-more:hover {
+        text-decoration: underline;
+    }
+
+    .hr-line {
+        margin: 20px 0;
+        border: 0;
+        border-top: 1px solid #ddd;
+    }
+
+
+
+    /* Styles for desktop view */
+    @media (min-width: 768px) {
+      .nav-links {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .nav-item {
+        margin: 0 10px;
+        text-decoration: none;
+      }
+
+      .blog-posts {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .post {
+        flex-basis:  0 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js">
+    <div class="header2"> 
+        <div class="nav-links">
+            <a aria-label="Home" href="/#" class="nav-item">Home</a>
+            <a aria-label="Learning" href="/learning.html" class="nav-item">Learning</a>
+            <a aria-label="References" href="/references.html" class="nav-item">References</a>
+            <a aria-label="My Resume" href="/resume.html" class="nav-item">Resume</a>
+        </div>
+        <h1>
+            <span class="site-title">My Tech Blog</span>
+            <span class="site-description">Tech Journals and Blog Posts</span>
+        </h1>
+    </div>
+    <a class="down" href="#blog" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+</div>
